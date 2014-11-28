@@ -246,7 +246,7 @@ angular.module('vision.event', ['vision.utils'])
     /**
      * Event driven
      */
-    .factory('VisionEventDispatcher', ['UtilArray', '$filter', '$q', function(UtilArray, $filter, $q){
+    .factory('VisionEventDispatcher', ['VsArrayUtils', '$filter', '$q', function(VsArrayUtils, $filter, $q){
 
         var VisionEventDispatcher = function(){
 
@@ -286,7 +286,7 @@ angular.module('vision.event', ['vision.utils'])
              * @param listenHandler
              */
             this.removeListener = function(type, resultHandler){
-                var indexOf = UtilArray.getItemIndexByPropertyValue(listeners[type], 'resultHandler', resultHandler);
+                var indexOf = VsArrayUtils.getItemIndexByPropertyValue(listeners[type], 'resultHandler', resultHandler);
                 if (indexOf > 0){
                     listeners[type].splice(indexOf, 1);
                 }
