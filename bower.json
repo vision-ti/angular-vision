@@ -1,0 +1,30 @@
+{
+  "name": "angular-vision",
+  "version": "1.0.0",
+  "main": "dist/angular-vision.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vision-ti/angular-vision.git"
+  },
+  "authors": [
+    "Felipe Leonhardt, VisionTI"
+  ],
+  "description": "AngularJS utils and event driven implementation",
+  "keywords": [
+    "angular",
+    "grid",
+    "vision",
+    "event driven"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.4"
+  }
+}
